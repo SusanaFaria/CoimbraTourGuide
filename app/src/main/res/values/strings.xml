@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Coimbra Tour Guide</string>
+
+
+    <!--mainactivity let's go button-->
+    <string name="Button">Explore</string>
+
+    <string name="bus">Bus Tour</string>
+
+    <string name="aboutCoimbra">"Coimbra, uma cidade à beira-rio no centro de Portugal.\n
+ Alberga uma cidade velha medieval preservada e a histórica Universidade de Coimbra.A Universidade é célebre pela sua biblioteca barroca, a Biblioteca Joanina, e pela sua torre do sino do século XVIII.\n
+ Na cidade velha encontra-se a catedral românica do século XII, a Sé Velha. A cidade velha inclui também o Museu Nacional de Machado de Castro,que exibe arte medieval e renascentista, e a Igreja de Santa Cruz, local onde jazem os primeiros reis de Portugal.\n
+ Do outro lado do rio Mondego encontram-se os vestígios góticos do Mosteiro de Santa Clara-a-Velha e o Portugal dos Pequenitos, um parque temático com reproduções em miniatura de pontos de referência portugueses.\n
+ Cidade de antigas tradições, em Coimbra pode ouvir-se o Fado, enquanto se degustam iguarias tradicionais."</string>
+</resources>

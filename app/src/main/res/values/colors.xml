@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ab47bc</color>
+    <color name="colorPrimaryDark">#790e8b</color>
+    <color name="colorAccent">#df78ef</color>
+
+    <color name="monuments_bckgrd">#790e8b</color>
+    <color name="to_do_bckgrd">#df78ef</color>
+</resources>

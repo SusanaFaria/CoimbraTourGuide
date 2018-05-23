@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coimbra Tour Guide</string>
+    <string name="Button">Explore</string>
+    <string name="aboutCoimbra">Coimbra, a city by the river in center Portugal.\n
+   \nIt hosts a well preserved old medieval town and the historical Coimbra University. The University is famous for its baroque library, \"Biblioteca Joanina\", and for it\'s bell tower from the XVIIIth century.\n
+   \nIn the old town, one can find the romanic cathedral from the XIIth century, "Sé Velha". The old town also includes the "Museu Nacional Machado de Castro", a museum that displays medieval and renaissance art, and the "Igreja de Santa Cruz", a church where lay the first kings of Portugal.\n
+   \nAcross the Mondego river, the visitor can see the gothic remains of The "Mosteiro de Santa Clara-a-Velha", a gothic monastery, and "Portugal dos Pequenitos",a theme park with miniature reproductions of portuguese reference points.\n
+   \nCity of old traditions, in Coimbra the visitor can have relaxing holidays while also listening to our famous Fado and tasting our delicous gastronomy.
+
+    </string>
+</resources>
