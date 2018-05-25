@@ -16,7 +16,7 @@ public class ActivitiesTab extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        PlacesFragmentPagerAdapter adapter = new PlacesFragmentPagerAdapter(getSupportFragmentManager());
+        PlacesFragmentPagerAdapter adapter = new PlacesFragmentPagerAdapter(this, getSupportFragmentManager());
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);

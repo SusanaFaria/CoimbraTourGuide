@@ -18,11 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivitiesTab">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW">
 
-                </action>
-            </intent-filter>
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".ActivitiesTab"/>

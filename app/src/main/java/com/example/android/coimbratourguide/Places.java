@@ -1,22 +1,22 @@
 package com.example.android.coimbratourguide;
 
-import android.net.Uri;
-
 public class Places {
 
     private String mPlaceName;
     private int mImage;
     private String mDescription;
     private String mPhoneNum;
-    private String mWeb;
+    private String mUrl;
 
 
-    public Places(int image, String placeName, String description, String phoneNum, String web) {
+
+    public Places(int image, String placeName, String description, String phoneNum, String url) {
         mPlaceName = placeName;
         mImage = image;
         mDescription = description;
         mPhoneNum = phoneNum;
-        mWeb = web;
+        mUrl = url;
+
         }
 
     public int getImageId() {
@@ -33,10 +33,8 @@ public class Places {
     public String getPhoneNum() {
         return mPhoneNum; }
 
-    public Uri getWeb() {
-
-        return Uri.parse(mWeb);
-    }
-
+        public String getUrl() {
+        return mUrl;
+        }
 
 }

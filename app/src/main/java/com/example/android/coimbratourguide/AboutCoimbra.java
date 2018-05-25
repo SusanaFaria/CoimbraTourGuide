@@ -35,7 +35,7 @@ public class AboutCoimbra extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://www.google.pt/maps/place/coimbra+portugal/@40.2033145,-8.4102573,10z/data=!4m2!3m1!1s0xd22f9144aacd16d:0x634564477b42a6b9?sa=X&ved=0ahUKEwje1cWc9o7bAhWJthQKHbU-CXcQvWgIIw";
+                String url = getString(R.string.about_map);
 
                 Uri webpage = Uri.parse(url);
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);

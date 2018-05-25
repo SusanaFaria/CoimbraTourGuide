@@ -30,9 +30,12 @@ public class Eat extends Fragment {
         //create a list of monuments
 
         final ArrayList<Places> places = new ArrayList<>();
-        places.add(new Places(R.drawable.uc, "University", "description", "phoneNum", ""));
-        places.add(new Places(R.drawable.portugal_pequenitos, "Portugal dos Pequenitos", "description", "", ""));
-        places.add(new Places(R.drawable.aqueduto, "Roman Ruins", "", "", ""));
+        places.add(new Places(R.drawable.fangas, getString(R.string.fangas), getString(R.string.fangas_descript), getString(R.string.fangas_phone_num), getString(R.string.fangas_url)));
+        places.add(new Places(R.drawable.dux, getString(R.string.dux), getString(R.string.dux_descript), getString(R.string.dux_phon_num), getString(R.string.dux_url)));
+        places.add(new Places(R.drawable.bistro_cafe_tapas_nas, getString(R.string.tapas), getString(R.string.tapas_descript), getString(R.string.tapas_phon_num), getString(R.string.tapas_url)));
+        places.add(new Places(R.drawable.maria_portuguesa_tapas, getString(R.string.maria), getString(R.string.maria_descript), getString(R.string.maria_phon_num), getString(R.string.maria_url)));
+        places.add(new Places(R.drawable.nata_lisboa, getString(R.string.nata), getString(R.string.nata_descript), getString(R.string.nata_phon_num), getString(R.string.nata_url)));
+        places.add(new Places(R.drawable.taberna, getString(R.string.taberna), getString(R.string.taberna_descript), getString(R.string.taberna_phon_num), getString(R.string.taberna_url)));
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
         GridView gridView = (GridView) rootView.findViewById(R.id.grid);

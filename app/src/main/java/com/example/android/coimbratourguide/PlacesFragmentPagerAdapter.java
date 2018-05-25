@@ -1,20 +1,23 @@
 package com.example.android.coimbratourguide;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
 public class PlacesFragmentPagerAdapter extends android.support.v4.app.FragmentPagerAdapter {
 
-    private String TabTitles[] = new String[]{"Monuments", "Things To Do", "Eat"};
+    private Context mContext;
 
-    public PlacesFragmentPagerAdapter(FragmentManager fm) {
+
+    public PlacesFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
 
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -25,13 +28,25 @@ public class PlacesFragmentPagerAdapter extends android.support.v4.app.FragmentP
         } else if (position ==1) {
                 return new ThingsToDo();
             }
-        else return new Eat ();
+            else if (position ==2) {
+            return new Eat();
+        }
+        else return new Sleep ();
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return TabTitles[position];
+
+        if (position == 0) {
+            return mContext.getString(R.string.monuments);
+        } else if (position == 1) {
+            return mContext.getString(R.string.toDo);
+        } else if (position == 2) {
+            return mContext.getString(R.string.comer);
+        } else {
+            return mContext.getString(R.string.sleep);
+        }
 
     }
 }

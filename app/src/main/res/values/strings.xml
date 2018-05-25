@@ -2,14 +2,159 @@
     <string name="app_name">Coimbra Tour Guide</string>
 
 
-    <!--mainactivity let's go button-->
-    <string name="Button">Explore</string>
+    <!--mainactivity aboutCoimbra and Explore buttons-->
 
-    <string name="bus">Bus Tour</string>
+    <string name="explore">Explore</string>
+    <string name="about">Sobre Coimbra</string>
+
+    <!-- aboutCoimbra.xml textView Title and link to map-->
+
+    <string name="title">About Coimbra</string>
+    <string name="map">Map</string>
+
 
     <string name="aboutCoimbra">"Coimbra, uma cidade à beira-rio no centro de Portugal.\n
  Alberga uma cidade velha medieval preservada e a histórica Universidade de Coimbra.A Universidade é célebre pela sua biblioteca barroca, a Biblioteca Joanina, e pela sua torre do sino do século XVIII.\n
  Na cidade velha encontra-se a catedral românica do século XII, a Sé Velha. A cidade velha inclui também o Museu Nacional de Machado de Castro,que exibe arte medieval e renascentista, e a Igreja de Santa Cruz, local onde jazem os primeiros reis de Portugal.\n
  Do outro lado do rio Mondego encontram-se os vestígios góticos do Mosteiro de Santa Clara-a-Velha e o Portugal dos Pequenitos, um parque temático com reproduções em miniatura de pontos de referência portugueses.\n
  Cidade de antigas tradições, em Coimbra pode ouvir-se o Fado, enquanto se degustam iguarias tradicionais."</string>
+
+    <string name="about_map">https://www.google.pt/maps/place/coimbra+portugal/@40.2033145,-8.4102573,10z/data=!4m2!3m1!1s0xd22f9144aacd16d:0x634564477b42a6b9?sa=X&amp;ved=0ahUKEwje1cWc9o7bAhWJthQKHbU-CXcQvWgIIw</string>
+
+    <!--strings for the tab titles-->
+
+    <string name="monuments">Monumentos</string>
+    <string name="toDo">Coisas para fazer</string>
+    <string name="comer">Onde Comer</string>
+    <string name="sleep">Onde Dormir</string>
+
+    <!--strings for the MonumentsFragment Items-->
+
+    <string name="UC">Universidade de Coimbra</string>
+    <string name="UC_description">Uma das Universidades mais antigas da Europa</string>
+    <string name="UC_phone_num">239 242 744</string>
+    <string name="UC_url">www.uc.pt</string>
+
+    <string name="criptoportic">Criptopórtico</string>
+    <string name="crpt_descript">"Entre na cidade romana subterrânea</string>
+    <string name="cript_ph_num">239 853 070</string>
+    <string name="cript_url">www.museumachadocastro.gov.pt</string>
+
+    <string name="aqueduto">Aqueduto Romano</string>
+    <string name="aqued_descript">Vestígios da presença romana</string>
+    <string name="aqued_phone_num">no booking needed</string>
+    <string name="aqued_url">www.google.pt/maps/place/Arcos+do+Jardim/@40.2067301,-8.4208961,15z/data=!4m5!3m4!1s0x0:0xddefaf1d8261315d!8m2!3d40.2067301!4d-8.4208961</string>
+
+    <string name="jardim_manga">Jardim da Manga</string>
+    <string name="jard_manga_descript">Inteiramente renascentista, a sua estrutura é evocativa da Fonte da Vida</string>
+    <string name="jard_manga_phone_num">no booking needed</string>
+    <string name="jard_manga_url">www.google.pt/maps/place/Restaurante+Jardim+da+Manga/@40.2110727,-8.4277347,15z/data=!4m5!3m4!1s0x0:0x10d0cafb8c254571!8m2!3d40.2110727!4d-8.4277347</string>
+
+    <string name="santa_clara_velha">Mosteiro de Santa Clara a Velha</string>
+    <string name="santa_cl_vlh_descript">Estilo gótico do século XIII</string>
+    <string name="santa_cl_vlh_phon_num">239 801 160</string>
+    <string name="santa_cl_vlh_url">www.google.pt/search?safe=active&amp;rlz=1C2AVFC_enPT766PT770&amp;q=mosteiro+de+santa+clara-a-velha&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=40202699,-8435435,174&amp;tbm=lcl&amp;ved=0ahUKEwjxwsy2gKHbAhWF6RQKHbr0DYsQtgMITw&amp;tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1&amp;rldoc=1#rlfi=hd:;si:;mv:!1m3!1d2380.766114821586!2d-8.42005625!3d40.2005934!2m3!1f0!2f0!3f0!3m2!1i455!2i75!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1</string>
+
+    <string name="fonte_dos_amores">Fonte dos Amores</string>
+    <string name="font_amores_descript">Data de 1326. Ao sítio de onde saía a água chamou-se "Fonte dos Amores", por ter presenciado a paixão de D. Pedro por Inês de Castro</string>
+    <string name="font_amores_phone_num">239 802 380</string>
+    <string name="font_amores_url">www.guiadacidade.pt/pt/poi-quinta-das-lagrimas-e-fonte-dos-amores-279367</string>
+
+    <!--strings for the Things to Do Fragment Items-->
+    <string name="basofias">Basófias</string>
+    <string name="basofias_descript">Dê um passeio de barco pelo Rio Mondego</string>
+    <string name="basofias_phone_num">969 830 664</string>
+    <string name="basofias_url">www.google.pt/maps/uv?hl=pt-PT&amp;pb=!1s0xd22f90804797721:0xfe0f2d90d05d067f!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipP04Li8S8T6bxAy4V1XK-get6KdPFkwxdi3YSz2%3Dw213-h160-k-no!5sbasofias+coimbra+-+Pesquisa+Google&amp;imagekey=!1e10!2sAF1QipP04Li8S8T6bxAy4V1XK-get6KdPFkwxdi3YSz2&amp;sa=X&amp;ved=0ahUKEwi4zMOMhKHbAhUQGhQKHTtKD1AQoioIpgEwDg</string>
+
+    <string name="bus">Bus Tour</string>
+    <string name="bus_descript">YellowBus Tours</string>
+    <string name="bus_phone_num">239 801 100</string>
+    <string name="bus_url">www.google.pt/maps/place/Yellow+Bus+Tours+%E2%80%94+Coimbra/@40.211498,-8.429313,15z/data=!4m5!3m4!1s0x0:0x347a0e082d075d15!8m2!3d40.211498!4d-8.429313</string>
+
+    <string name="downtown">Downtown</string>
+    <string name="downtown_descript">Dê um passeio pelas ruas da baixa</string>
+    <string name="downtown_url">www.google.pt/search?safe=active&amp;rlz=1C2AVFC_enPT766PT770&amp;biw=1366&amp;bih=662&amp;q=baixa+coimbra&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=40212052,-8430568,168&amp;tbm=lcl&amp;ved=0ahUKEwjroOnOhKHbAhUL8RQKHUPBA2wQtgMIKg&amp;tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&amp;rldoc=1#rlfi=hd:;si:12114231307260653029;mv:!1m3!1d2015.4013744622994!2d-8.4308604!3d40.211151550000004!2m3!1f0!2f0!3f0!3m2!1i97!2i127!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2</string>
+
+    <string name="golf">Play Golf</string>
+    <string name="golf_descript">Apanhe ar fresco e faça exercício!</string>
+    <string name="golf_phone_num">239 802 388</string>
+    <string name="golf_url">http://www.quintadaslagrimasgolfe.pt/</string>
+
+    <string name="botanical_garden">Jardim Botânico</string>
+    <string name="bot_gard_descript">Elegante jardim do séc. XVIII com canteiros de flores formais, fontes elevadas e estufas de plantas tropicais</string>
+    <string name="bot_garden_phone_num">239 855 215</string>
+    <string name="bot_gard_url">www.google.pt/maps/place/Jardim+Bot%C3%A2nico+da+Universidade+de+Coimbra/@40.205491,-8.420743,15z/data=!4m5!3m4!1s0x0:0xbf58f2303575d92e!8m2!3d40.205491!4d-8.420743</string>
+
+    <string name="small_portugal">Portugal dos Pequenitos</string>
+    <string name="small_port_descript">Diversão garantida, com crianças ou não! Tem um museu da Barbie e tudo!</string>
+    <string name="small_port_phone_num">239 801 170</string>
+    <string name="small_port_url">www.google.pt/maps/place/Portugal+dos+Pequenitos/@40.2022974,-8.4343859,15z/data=!4m5!3m4!1s0x0:0x5cb2ceaa4baf143c!8m2!3d40.2022974!4d-8.4343859</string>
+
+    <!--strings for the eatFragment Items-->
+    <string name="fangas">Fangas Mercearia Bar</string>
+    <string name="fangas_descript">Cozinha Portuguesa e Mediterrânea</string>
+    <string name="fangas_phone_num">934 093 636</string>
+   <string name="fangas_url">www.google.pt/maps/place/Fangas+Mercearia+Bar/@40.2082396,-8.4285682,15z/data=!4m5!3m4!1s0x0:0x651c7045e8615015!8m2!3d40.2082396!4d-8.4285682</string>
+
+    <string name="dux">Dux</string>
+    <string name="dux_descript">Petiscos e Vinhos tradicionais</string>
+    <string name="dux_phon_num">239 402 818</string>
+    <string name="dux_url">www.google.pt/search?safe=active&amp;rlz=1C2AVFC_enPT766PT770&amp;q=dux+restaurante+coimbra&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=40208480,-8423556,962&amp;tbm=lcl&amp;ved=0ahUKEwi57bC8_aDbAhUEVxQKHUgPCVoQtgMIOw&amp;tbs=lrf:!2m1!1e3!3sIAE,lf:1,lf_ui:4&amp;rldoc=1#rlfi=hd:;si:;mv:!1m3!1d8125.7125092733!2d-8.4177707!3d40.2058979!2m3!1f0!2f0!3f0!3m2!1i396!2i256!4f13.1;tbs:lrf:!2m1!1e3!3sIAE,lf:1,lf_ui:4</string>
+
+    <string name="tapas">Tapas nas Costas</string>
+    <string name="tapas_descript">Cozinha Portuguesa e Mediterrânea</string>
+    <string name="tapas_phon_num"> 239 157 425</string>
+    <string name="tapas_url">www.google.pt/maps/place/Tapas+nas+Costas/@40.2088581,-8.4282249,15z/data=!4m5!3m4!1s0x0:0x2c36a054311c06c4!8m2!3d40.2088581!4d-8.4282249</string>
+
+    <string name="maria">Maria Portuguesa</string>
+    <string name="maria_descript">Tapas e Conservas</string>
+    <string name="maria_phon_num"> 925 344 924</string>
+    <string name="maria_url">www.google.pt/maps/place/Maria+Portuguesa/@40.208845,-8.427579,15z/data=!4m5!3m4!1s0x0:0x89ebaa2c951e654!8m2!3d40.208845!4d-8.427579</string>
+
+    <string name="nata">Nata Lisboa</string>
+    <string name="nata_descript">"The world needs nata". O pastel de nata tradicional.</string>
+    <string name="nata_phon_num">239 821 500</string>
+    <string name="nata_url">www.google.pt/maps/place/NATA+Lisboa/@40.2088622,-8.4290702,15z/data=!4m2!3m1!1s0x0:0x227e4add54d36143?sa=X&amp;ved=0ahUKEwicmJCp_6DbAhUD1hQKHbfSAawQ_BIImgEwDw</string>
+
+    <string name="taberna">A Taberna</string>
+    <string name="taberna_descript">Comida tradicional Portuguesa</string>
+    <string name="taberna_phon_num">239 716 265</string>
+    <string name="taberna_url">www.google.pt/maps/place/A+Taberna/@40.20355,-8.413312,15z/data=!4m5!3m4!1s0x0:0xd13e7ada5891c266!8m2!3d40.20355!4d-8.413312</string>
+
+    <!--strings for the sleepFragment Items-->
+    <string name="hostel_se_velha">Hostel Sé Velha</string>
+    <string name="hostel_se_velha_descript">Uma forma de sentir e viver Coimbra, que passa pela defesa da sua história e valores culturais</string>
+    <string name="hostel_se_velha_phon_num">239 151 647/ 914 492 258</string>
+    <string name="hostel_se_velha_url">www.google.pt/maps/place/Hostel+S%C3%A9+Velha/@40.2087649,-8.4265184,15z/data=!4m2!3m1!1s0x0:0xb5879588b3a5460e?sa=X&amp;ved=0ahUKEwimv8f3gaHbAhWBsRQKHckKAK8Q_BIIzgEwDw</string>
+
+    <string name="hotel_astoria">Hotel Astória</string>
+    <string name="hotel_astoria_descript">Obra única de arquitetura, é  um hotel confortável, com uma excelente localização central e excelentes vistas para o rio. </string>
+    <string name="hotel_astoria_phon_num"> 239 853 020</string>
+    <string name="hotel_astoria_url">www.google.pt/maps/place/Hotel+Ast%C3%B3ria/@40.207746,–8.43043,15z/data=!4m8!3m7!1s0x0:0x7954c2ec7ecf809b!5m2!1s2018–06–01!2i7!8m2!3d40.207746!4d-8.43043</string>
+
+    <string name="hotel_ibis">Hotel Ibis</string>
+    <string name="hotel_ibis_descript">No centro de Coimbra, às margens do rio Mondego, é ideal para estadias de turismo, junto a transportes e zonas históricas </string>
+    <string name="hotel_ibis_phon_num">239 852 130</string>
+    <string name="hotel_ibis_url">www.google.pt/maps/place/Hotel+ibis+Coimbra+Centro/@40.2052767,-8.4267832,15z/data=!4m2!3m1!1s0x0:0x8e26e49ca244e926?sa=X&amp;ved=0ahUKEwjy0KvGgqHbAhUIJcAKHbT6BogQ_BII1AEwCg</string>
+    
+    <string name="hi_hostel">HI Hostel Pousada da Juventude</string>
+    <string name="hi_hostel_descript">Pousada da Juventude, no coração da cidade</string>
+    <string name="hi_hostel_phon_num">239 829 228 / 925 979 789</string>
+    <string name="hi_hostel_url">www.google.pt/maps/uv?hl=pt-PT&amp;pb=!1s0xd22f9741306517d:0x40914bbd274f59c!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4s/maps/place/hi%2Bhostel%2Bcoimbra/@40.2110199,-8.413977,3a,75y,252.28h,90t/data%3D*213m4*211e1*213m2*211sN8WOfuqUpEK9qJMQuHfUeQ*212e0*214m2*213m1*211s0xd22f9741306517d:0x40914bbd274f59c!5shi+hostel+coimbra+-+Pesquisa+Google&amp;imagekey=!1e2!2sN8WOfuqUpEK9qJMQuHfUeQ&amp;sa=X&amp;ved=0ahUKEwj-36jdgqHbAhXEXRQKHbF2CWsQpx8IqAEwCg</string>
+
+    <string name="hotel_vila_gale">Hotel Vila Galé</string>
+    <string name="hotel_vg_descript">Com uma surpreendente vista sobre o Rio Mondego, o hotel Vila Galé Coimbra fica próximo do centro histórico da cidade</string>
+    <string name="hotel_vg_phon_num">239 240 000</string>
+    <string name="hotel_vg_url">www.google.pt/maps/uv?hl=pt-PT&amp;pb=!1s0xd22f90331c76d09:0xece49b392333d480!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNFctPYKfagcIS6rfiuBRWBSzDBZ2KwgIPzxDgf%3Dw193-h160-k-no!5svila+gale+coimbra+-+Pesquisa+Google&amp;imagekey=!1e10!2sAF1QipNFctPYKfagcIS6rfiuBRWBSzDBZ2KwgIPzxDgf&amp;sa=X&amp;ved=0ahUKEwjNkpyIg6HbAhVsCsAKHUGyCV0QoioIswEwCg</string>
+
+    <string name="hotel_ibn_arrik">Hotels IBN Arrik</string>
+    <string name="hotel_ibn_descript">Ao chegar ao Ibn Arrik, terá sempre a sensação de que está a ser tratado como um Rei. O mobiliário é de madeira maciça e os materiais são todos da mais alta qualidade</string>
+    <string name="hotel_ibn_phon_num">239 822 600</string>
+    <string name="hotel_ibn_url">www.google.pt/maps/uv?hl=pt-PT&amp;pb=!1s0xd22f90ac1ae4faf:0xacddfc97055296c0!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps://www.booking.com/hotel/pt/ibn-arrik.html?aid%3D1213432;label%3Dseogooglelocal-link-imagesaow-hotel-2462250_grp-2_gendate-20180428;utm_source%3Dseogooglelocal;utm_medium%3Dphoto;utm_term%3Dhotel-2462250_photo-106748199!5sibn+arrik+coimbra+-+Pesquisa+Google&amp;imagekey=!1e1!2shttp://bstatic.com/images/hotel/840x460_watermarked_standard_bluecom/dfb/dfb8a4fd4fc65e01edbb8b1ea08aec3d86df2a65.jpg&amp;sa=X&amp;ved=0ahUKEwi-tKbDg6HbAhWFxxQKHRfADDkQoioIrwEwDg</string>
+
+
+    <string name="web">Directions</string>
+
+
+
 </resources>

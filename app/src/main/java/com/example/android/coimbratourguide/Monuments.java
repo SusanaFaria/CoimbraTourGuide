@@ -30,12 +30,12 @@ public class Monuments extends Fragment {
         //create a list of monuments
 
         final ArrayList<Places> places = new ArrayList<>();
-        places.add(new Places(R.drawable.uc, "University", "One of the oldest Universities in Europe", " 239 242 744", "www.googlemaps.com"));
-        places.add(new Places(R.drawable.criptoportico, "Criptoportic", "Enter the underground Roman city", "239 853 070", ""));
-        places.add(new Places(R.drawable.aqueduto, "Roman Aqueduct", "Remains of the roman presence", "no booking", ""));
-        places.add(new Places(R.drawable.jardim_da_manga, "Jardim da Manga", "É uma das primeiras obras arquitectónicas inteiramente renascentistas feitas em Portugal e a sua estrutura é evocativa da Fonte da Vida", "no booking", ""));
-        places.add(new Places(R.drawable.mosteiro_sclv, "Santa Clara-a-velha Monastery", "Representa um momento de experimentação do estilo gótico no país. A sua fundação, em fins do século XIII, inscreve-se numa conjuntura de gradual influência e aceitação na sociedade portuguesa em geral", " 239 801 160", ""));
-        places.add(new Places(R.drawable.fonte_dos_amores, "Fonte dos Amores", " Data de 1326, ano em que Santa Isabel de Aragão, Rainha de Portugal mandou fazer um canal para levar a água de duas nascentes para o Convento de Santa Clara. Ao sítio de onde saía a água chamou-se \"Fonte dos Amores\", por ter presenciado a paixão de D. Pedro, neto da soberana, por Inês de Castro, fidalga galega que servia de dama de companhia à esposa de D. Pedro, D. Constança", "239 802 380", ""));
+        places.add(new Places(R.drawable.uc, getString(R.string.UC), getString(R.string.UC_description), getString(R.string.UC_phone_num), getString(R.string.UC_url)));
+        places.add(new Places(R.drawable.criptoportico, getString(R.string.criptoportic), getString(R.string.crpt_descript), getString(R.string.cript_ph_num), getString(R.string.cript_url)));
+        places.add(new Places(R.drawable.aqueduto, getString(R.string.aqueduto),getString(R.string.aqued_descript), null, getString(R.string.aqued_url)));
+        places.add(new Places(R.drawable.jardim_da_manga, getString(R.string.jardim_manga), getString(R.string.jard_manga_descript), null, getString(R.string.jard_manga_url)));
+        places.add(new Places(R.drawable.mosteiro_sclv, getString(R.string.santa_clara_velha), getString(R.string.santa_cl_vlh_descript), getString(R.string.santa_cl_vlh_phon_num), getString(R.string.santa_cl_vlh_url)));
+        places.add(new Places(R.drawable.fonte_dos_amores, getString(R.string.fonte_dos_amores), getString(R.string.font_amores_descript), getString(R.string.font_amores_phone_num), getString(R.string.font_amores_url)));
 
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
