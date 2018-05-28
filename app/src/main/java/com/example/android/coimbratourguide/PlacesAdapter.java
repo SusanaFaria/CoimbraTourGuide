@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.text.method.LinkMovementMethod;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,11 +25,14 @@ import static com.example.android.coimbratourguide.R.color.colorAccent;
 
 public class PlacesAdapter extends ArrayAdapter<Places> {
 
+    private Context mContext;
+
 
 
     public PlacesAdapter(Activity context, ArrayList<Places> places) {
 
         super(context, 0, places);
+        this.mContext = context;
     }
 
 
@@ -40,36 +44,37 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
         // Check if the existing view is being reused, otherwise inflate the view
         View gridItemView = convertView;
         if (gridItemView == null) {
-            gridItemView = LayoutInflater.from(getContext()).inflate(
+            gridItemView = LayoutInflater.from(mContext).inflate(
                     R.layout.place_layout, parent, false);
+
+
         }
 
         final Places currentPlace = getItem(position);
-        ImageView imgView = (ImageView) gridItemView.findViewById(R.id.placeImage);
+        ImageView imgView = gridItemView.findViewById(R.id.placeImage);
         imgView.setImageResource(currentPlace.getImageId());
         imgView.setVisibility(View.VISIBLE);
 
-        final TextView name = (TextView) gridItemView.findViewById(R.id.name);
+        final TextView name = gridItemView.findViewById(R.id.name);
         name.setText(currentPlace.getPlaceName());
         name.setAllCaps(true);
 
-        TextView description = (TextView) gridItemView.findViewById(R.id.description);
+        TextView description = gridItemView.findViewById(R.id.description);
         description.setText(currentPlace.getDescription());
-        description.getLayoutParams();
+        description.getContext().getResources().getResourceEntryName(R.style.description_text);
 
-        ImageView phone = (ImageView) gridItemView.findViewById(R.id.phone);
+        ImageView phone = gridItemView.findViewById(R.id.phone);
         phone.setVisibility(View.VISIBLE);
 
-        TextView phoneNUmber = (TextView) gridItemView.findViewById(R.id.phone_number);
+        TextView phoneNUmber = gridItemView.findViewById(R.id.phone_number);
         phoneNUmber.setText(currentPlace.getPhoneNum());
 
         TextView urlz = gridItemView.findViewById(R.id.url);
         urlz.setText(getContext().getResources().getString(R.string.web));
         urlz.setAllCaps(true);
-        urlz.setEnabled(true);
-        urlz.setLinkTextColor(getContext().getResources().getColor(R.color.colorAccent));
+        urlz.setTextColor(getContext().getResources().getColor(R.color.colorAccent));
         urlz.setTypeface(null, Typeface.BOLD);
-        urlz.setLinksClickable(true);
+        urlz.setGravity(Gravity.CENTER);
         urlz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

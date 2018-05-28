@@ -3,7 +3,7 @@
 
 
     <stroke android:color="@android:color/black"
-        android:width="2dp"/>
+        android:width="@dimen/grid_design_stroke" />
 
 
 

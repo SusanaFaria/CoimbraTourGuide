@@ -10,7 +10,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/img_height"
         android:src="@drawable/coimbra"
         android:scaleType="centerInside"
         android:layout_weight="1"
@@ -28,10 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/about"
-            android:textColor="@android:color/holo_orange_dark"
+            android:layout_margin="@dimen/about_Coimbra_title_margin"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:layout_margin="8dp"
+            android:padding="@dimen/about_Coimbra_title_margin"
+            android:textColor="@android:color/white"
             android:drawSelectorOnTop="true"/>
 
         <Button
@@ -39,11 +39,11 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:layout_margin="@dimen/about_Coimbra_title_margin"
             android:text="@string/explore"
             android:textColor="@android:color/white"
             android:layout_weight="1"
-            android:layout_margin="8dp"
+            android:padding="@dimen/about_Coimbra_title_margin"
             android:drawSelectorOnTop="true"/>
     </LinearLayout>
 

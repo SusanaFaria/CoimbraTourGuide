@@ -13,9 +13,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/aboutCoimbra"
-            android:textAllCaps="true"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/about_Coimbra_title_margin"
+            android:text="@string/title"
+            android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:layout_gravity="center" />
 
@@ -24,16 +24,15 @@
         android:id="@+id/aboutCoimbra"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:textAllCaps="true"
+        android:layout_margin="@dimen/about_Coimbra_txt_margin"
+        android:text="@string/aboutCoimbra"
         android:layout_gravity="center_vertical|end"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/map"
-            android:layout_margin="8dp"
-
+            android:layout_margin="@dimen/about_Coimbra_title_margin"
             android:textColor="@android:color/black"
             android:layout_gravity="center" />
 
@@ -44,7 +43,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/map"
             android:drawSelectorOnTop="true"
-            android:layout_margin="20dp"/>
+            android:layout_margin="@dimen/Coimbra_map_img" />
 
 
 

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_centerInParent="true"
-    android:padding="4dp"
-    android:layout_margin="2dp"
     android:background="@drawable/grid_design">
 
 
     <ImageView
         android:id="@+id/placeImage"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="@dimen/place_image_height"
         android:scaleType="centerCrop"
         android:layout_gravity="center"
         android:layout_weight="1" />
@@ -21,13 +19,14 @@
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="@dimen/txt_name_height"
+        android:padding="@dimen/about_Coimbra_title_margin"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:layout_weight="2"
         android:textStyle="bold"
         android:textAllCaps="true"
-        android:textSize="24sp"
+        android:textSize="@dimen/txt_name_size"
         android:background="@android:color/white" />
 
     <TextView
@@ -59,8 +58,8 @@
     <TextView
         android:id="@+id/url"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_height="@dimen/txt_url_height"
+        android:layout_marginBottom="@dimen/txt_url_marg_bottom"
         android:gravity="center" />
 
 
