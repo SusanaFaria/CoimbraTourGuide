@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--aboutCoimbra Activity-->
+    <dimen name="about_Coimbra_title_margin">8dp</dimen>
+    <dimen name="about_Coimbra_txt_margin">16dp</dimen>
+    <dimen name="Coimbra_map_img">20dp</dimen>
+
+    <!--activityMain dimens-->
+    <dimen name="img_height">0dp</dimen>
+
+    <!--place_layout activity-->
+    <dimen name="place_image_height">120dp</dimen>
+    <dimen name="txt_name_height">52dp</dimen>
+    <dimen name="txt_name_size">24sp</dimen>
+    <dimen name="grid_design_stroke">2dp</dimen>
+    <dimen name="txt_url_height">16dp</dimen>
+    <dimen name="txt_url_marg_bottom">12dp</dimen>
+
+
+</resources>
