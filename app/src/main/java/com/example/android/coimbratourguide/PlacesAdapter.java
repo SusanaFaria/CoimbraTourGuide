@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.sax.StartElementListener;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -25,14 +26,15 @@ import static com.example.android.coimbratourguide.R.color.colorAccent;
 
 public class PlacesAdapter extends ArrayAdapter<Places> {
 
+
     private Context mContext;
 
 
-
-    public PlacesAdapter(Activity context, ArrayList<Places> places) {
-
+    public PlacesAdapter(Context context, ArrayList<Places> places) {
         super(context, 0, places);
+
         this.mContext = context;
+
     }
 
 
@@ -40,18 +42,17 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-
         // Check if the existing view is being reused, otherwise inflate the view
         View gridItemView = convertView;
         if (gridItemView == null) {
-            gridItemView = LayoutInflater.from(mContext).inflate(
+            gridItemView = LayoutInflater.from(this.mContext).inflate(
                     R.layout.place_layout, parent, false);
-
-
         }
 
         final Places currentPlace = getItem(position);
+
         ImageView imgView = gridItemView.findViewById(R.id.placeImage);
+        assert currentPlace != null;
         imgView.setImageResource(currentPlace.getImageId());
         imgView.setVisibility(View.VISIBLE);
 
@@ -65,6 +66,7 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
 
         ImageView phone = gridItemView.findViewById(R.id.phone);
         phone.setVisibility(View.VISIBLE);
+        phone.setPadding(8, 0, 0, 0);
 
         TextView phoneNUmber = gridItemView.findViewById(R.id.phone_number);
         phoneNUmber.setText(currentPlace.getPhoneNum());

@@ -2,6 +2,7 @@ package com.example.android.coimbratourguide;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,7 @@ public class Eat extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         final View rootView = inflater.inflate(R.layout.grid_view, container, false);
@@ -38,7 +39,7 @@ public class Eat extends Fragment {
         places.add(new Places(R.drawable.taberna, getString(R.string.taberna), getString(R.string.taberna_descript), getString(R.string.taberna_phon_num), getString(R.string.taberna_url)));
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
-        GridView gridView = (GridView) rootView.findViewById(R.id.grid);
+        GridView gridView = rootView.findViewById(R.id.grid);
         gridView.setAdapter(adapter);
 
 

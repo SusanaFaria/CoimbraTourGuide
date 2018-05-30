@@ -1,5 +1,6 @@
 package com.example.android.coimbratourguide;
 
+import android.app.Activity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.design.widget.TabLayout;
@@ -13,7 +14,7 @@ public class ActivitiesTab extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activities_tab);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        ViewPager viewPager = findViewById(R.id.viewPager);
 
         // Create an adapter that knows which fragment should be shown on each page
         PlacesFragmentPagerAdapter adapter = new PlacesFragmentPagerAdapter(this, getSupportFragmentManager());
@@ -21,7 +22,7 @@ public class ActivitiesTab extends AppCompatActivity {
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
 
-        TabLayout myTabs = (TabLayout) findViewById(R.id.sliding_tabs);
+        TabLayout myTabs = findViewById(R.id.sliding_tabs);
         myTabs.setupWithViewPager(viewPager);
 
 
