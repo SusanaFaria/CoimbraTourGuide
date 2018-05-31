@@ -56,7 +56,7 @@
     <string name="santa_cl_vlh_url">www.google.pt/search?safe=active&amp;rlz=1C2AVFC_enPT766PT770&amp;q=mosteiro+de+santa+clara-a-velha&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=40202699,-8435435,174&amp;tbm=lcl&amp;ved=0ahUKEwjxwsy2gKHbAhWF6RQKHbr0DYsQtgMITw&amp;tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1&amp;rldoc=1#rlfi=hd:;si:;mv:!1m3!1d2380.766114821586!2d-8.42005625!3d40.2005934!2m3!1f0!2f0!3f0!3m2!1i455!2i75!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1</string>
 
     <string name="fonte_dos_amores">Fonte dos Amores</string>
-    <string name="font_amores_descript">Data de 1326. Ao sítio de onde saía a água chamou-se "Fonte dos Amores", por ter presenciado a paixão de D. Pedro por Inês de Castro</string>
+    <string name="font_amores_descript">Data de 1326. Chamou-se "Fonte dos Amores", por ter presenciado a paixão de D. Pedro por Inês de Castro</string>
     <string name="font_amores_phone_num">239 802 380</string>
     <string name="font_amores_url">www.guiadacidade.pt/pt/poi-quinta-das-lagrimas-e-fonte-dos-amores-279367</string>
 
@@ -136,7 +136,7 @@
     <string name="hotel_ibis_descript">No centro de Coimbra, às margens do rio Mondego, é ideal para estadias de turismo, junto a transportes e zonas históricas </string>
     <string name="hotel_ibis_phon_num">239 852 130</string>
     <string name="hotel_ibis_url">www.google.pt/maps/place/Hotel+ibis+Coimbra+Centro/@40.2052767,-8.4267832,15z/data=!4m2!3m1!1s0x0:0x8e26e49ca244e926?sa=X&amp;ved=0ahUKEwjy0KvGgqHbAhUIJcAKHbT6BogQ_BII1AEwCg</string>
-    
+
     <string name="hi_hostel">HI Hostel Pousada da Juventude</string>
     <string name="hi_hostel_descript">Pousada da Juventude, no coração da cidade</string>
     <string name="hi_hostel_phon_num">239 829 228 / 925 979 789</string>
@@ -154,7 +154,6 @@
 
 
     <string name="web">Directions</string>
-
 
 
 </resources>
