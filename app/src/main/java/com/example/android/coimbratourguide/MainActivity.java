@@ -39,12 +39,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         Button Explore = findViewById(R.id.explore);
         Explore.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent activities = new Intent(MainActivity.this, AboutCoimbra.class);
                         startActivity(activities);
-
-
                     }
         });
 
@@ -76,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
             mMediaPlayer.start();
 
-
             // Setup a listener on the media player, so that we can stop and release the
             // media player once the sound has finished playing.
             mMediaPlayer.setOnCompletionListener(mCompletionListener);
@@ -87,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
     public void onStop() {
         super.onStop();
         mMediaPlayer.stop();
-
     }
 
     @Override
@@ -99,20 +93,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void releaseMediaPlayer() {
 
-        // If the media player is not null, then it may be currently playing a sound.
         if (mMediaPlayer != null) {
-            // Regardless of the current state of the media player, release its resources
-            // because we no longer need it.
+
             mMediaPlayer.release();
 
-            // Set the media player back to null. For our code, we've decided that
-            // setting the media player to null is an easy way to tell that the media player
-            // is not configured to play an audio file at the moment.
             mMediaPlayer = null;
             mAudioManager.abandonAudioFocus(mListener);
         }
-
-
-
     }
 }

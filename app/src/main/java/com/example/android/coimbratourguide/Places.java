@@ -8,16 +8,13 @@ public class Places {
     private String mPhoneNum;
     private String mUrl;
 
-
-
     public Places(int image, String placeName, String description, String phoneNum, String url) {
         mPlaceName = placeName;
         mImage = image;
         mDescription = description;
         mPhoneNum = phoneNum;
         mUrl = url;
-
-        }
+    }
 
     public int getImageId() {
         return mImage;
@@ -28,13 +25,15 @@ public class Places {
     }
 
     public String getDescription() {
-        return mDescription; }
+        return mDescription;
+    }
 
     public String getPhoneNum() {
-        return mPhoneNum; }
+        return mPhoneNum;
+    }
 
-        public String getUrl() {
+    public String getUrl() {
         return mUrl;
-        }
+    }
 
 }

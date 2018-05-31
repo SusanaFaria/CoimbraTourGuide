@@ -26,17 +26,13 @@ import static com.example.android.coimbratourguide.R.color.colorAccent;
 
 public class PlacesAdapter extends ArrayAdapter<Places> {
 
-
     private Context mContext;
-
 
     public PlacesAdapter(Context context, ArrayList<Places> places) {
         super(context, 0, places);
 
         this.mContext = context;
-
     }
-
 
     @NonNull
     @Override
@@ -60,37 +56,31 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
         name.setText(currentPlace.getPlaceName());
         name.setAllCaps(true);
 
-        TextView description = gridItemView.findViewById(R.id.description);
+        final TextView description = gridItemView.findViewById(R.id.description);
         description.setText(currentPlace.getDescription());
         description.getContext().getResources().getResourceEntryName(R.style.description_text);
 
         ImageView phone = gridItemView.findViewById(R.id.phone);
-        phone.setVisibility(View.VISIBLE);
-        phone.setPadding(8, 0, 0, 0);
+        if (currentPlace.getPhoneNum() != null) {
+            phone.setVisibility(View.VISIBLE);
+        } else phone.setVisibility(View.GONE);
 
         TextView phoneNUmber = gridItemView.findViewById(R.id.phone_number);
         phoneNUmber.setText(currentPlace.getPhoneNum());
 
         TextView urlz = gridItemView.findViewById(R.id.url);
         urlz.setText(getContext().getResources().getString(R.string.web));
-        urlz.setAllCaps(true);
-        urlz.setTextColor(getContext().getResources().getColor(R.color.colorAccent));
-        urlz.setTypeface(null, Typeface.BOLD);
-        urlz.setGravity(Gravity.CENTER);
         urlz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent directions = new Intent(Intent.ACTION_VIEW);
-                directions.setData(Uri.parse(String.valueOf("http://"+currentPlace.getUrl())));
+                directions.setData(Uri.parse(String.valueOf("http://" + currentPlace.getUrl())));
                 getContext().startActivity(directions);
-
             }
         });
 
-
         return gridItemView;
-
     }
 }
 

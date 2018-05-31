@@ -24,11 +24,7 @@ public class ActivitiesTab extends AppCompatActivity {
 
         TabLayout myTabs = findViewById(R.id.sliding_tabs);
         myTabs.setupWithViewPager(viewPager);
-
-
-
+    }
 
 }
-
-    }
 

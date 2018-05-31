@@ -12,7 +12,6 @@ public class PlacesFragmentPagerAdapter extends android.support.v4.app.FragmentP
     public PlacesFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
-
     }
 
     @Override
@@ -25,13 +24,11 @@ public class PlacesFragmentPagerAdapter extends android.support.v4.app.FragmentP
 
         if (position == 0) {
             return new Monuments();
-        } else if (position ==1) {
-                return new ThingsToDo();
-            }
-            else if (position ==2) {
+        } else if (position == 1) {
+            return new ThingsToDo();
+        } else if (position == 2) {
             return new Eat();
-        }
-        else return new Sleep ();
+        } else return new Sleep();
     }
 
     @Override
@@ -47,7 +44,6 @@ public class PlacesFragmentPagerAdapter extends android.support.v4.app.FragmentP
         } else {
             return mContext.getString(R.string.sleep);
         }
-
     }
 }
 

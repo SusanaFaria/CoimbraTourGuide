@@ -16,7 +16,6 @@ import java.util.ArrayList;
  */
 public class Monuments extends Fragment {
 
-
     public Monuments() {
         // Required empty public constructor
     }
@@ -26,9 +25,7 @@ public class Monuments extends Fragment {
                              Bundle savedInstanceState) {
       final View rootView = inflater.inflate(R.layout.grid_view, container, false);
 
-
         //create a list of monuments
-
         final ArrayList<Places> places = new ArrayList<>();
         places.add(new Places(R.drawable.uc, getString(R.string.UC), getString(R.string.UC_description), getString(R.string.UC_phone_num), getString(R.string.UC_url)));
         places.add(new Places(R.drawable.criptoportico, getString(R.string.criptoportic), getString(R.string.crpt_descript), getString(R.string.cript_ph_num), getString(R.string.cript_url)));
@@ -39,13 +36,10 @@ public class Monuments extends Fragment {
 
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
-        GridView gridView = (GridView) rootView.findViewById(R.id.grid);
+        GridView gridView = rootView.findViewById(R.id.grid);
         gridView.setAdapter(adapter);
 
-
         return rootView;
-
-
     }
 }
 

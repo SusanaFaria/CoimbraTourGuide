@@ -17,19 +17,17 @@ import java.util.ArrayList;
  */
 public class Eat extends Fragment {
 
-
     public Eat() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         final View rootView = inflater.inflate(R.layout.grid_view, container, false);
-        //create a list of monuments
 
+        //create a list of restaurants
         final ArrayList<Places> places = new ArrayList<>();
         places.add(new Places(R.drawable.fangas, getString(R.string.fangas), getString(R.string.fangas_descript), getString(R.string.fangas_phone_num), getString(R.string.fangas_url)));
         places.add(new Places(R.drawable.dux, getString(R.string.dux), getString(R.string.dux_descript), getString(R.string.dux_phon_num), getString(R.string.dux_url)));
@@ -41,7 +39,6 @@ public class Eat extends Fragment {
 
         GridView gridView = rootView.findViewById(R.id.grid);
         gridView.setAdapter(adapter);
-
 
         return rootView;
     }

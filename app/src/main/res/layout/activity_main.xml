@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,28 +9,28 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/img_height"
-        android:src="@drawable/coimbra"
-        android:scaleType="centerInside"
         android:layout_weight="1"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        android:scaleType="centerInside"
+        android:src="@drawable/coimbra" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/about"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/about"
             android:layout_margin="@dimen/about_Coimbra_title_margin"
             android:layout_weight="1"
+            android:drawSelectorOnTop="true"
             android:padding="@dimen/about_Coimbra_title_margin"
-            android:textColor="@android:color/white"
-            android:drawSelectorOnTop="true"/>
+            android:text="@string/about"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/explore"
@@ -40,13 +38,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/about_Coimbra_title_margin"
-            android:text="@string/explore"
-            android:textColor="@android:color/white"
             android:layout_weight="1"
+            android:drawSelectorOnTop="true"
             android:padding="@dimen/about_Coimbra_title_margin"
-            android:drawSelectorOnTop="true"/>
+            android:text="@string/explore"
+            android:textColor="@android:color/white" />
     </LinearLayout>
-
 
 
 </LinearLayout>

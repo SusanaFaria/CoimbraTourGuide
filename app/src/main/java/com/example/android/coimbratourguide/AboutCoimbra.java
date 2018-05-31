@@ -1,6 +1,5 @@
 package com.example.android.coimbratourguide;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -15,22 +14,20 @@ import android.widget.TextView;
 
 import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
-
 public class AboutCoimbra extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_coimbra);
 
-        TextView aboutCoimbra = (TextView) findViewById(R.id.aboutCoimbra);
+        TextView aboutCoimbra = findViewById(R.id.aboutCoimbra);
         aboutCoimbra.setText(R.string.aboutCoimbra);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             aboutCoimbra.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
         }
 
-        ImageView map = (ImageView) findViewById(R.id.map);
+        ImageView map = findViewById(R.id.map);
         map.setVisibility(View.VISIBLE);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,11 +38,9 @@ public class AboutCoimbra extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
-
                 }
             }
         });
-
 
     }
 }
